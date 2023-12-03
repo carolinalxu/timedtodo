@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(25, 118, 210);
+  color: rgb(255, 255, 255);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 5rem;
+  padding-right: 20rem;
+  margin-bottom: 1rem;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.singleTask {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
+  width: 30rem;
+}
+
+.todoInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  cursor: pointer;
+  min-width: 64px;
+  padding: 4px 5px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.edit-btn {
+  color: rgb(46, 125, 50);
+}
+
+.delete-btn {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+}
+
+.task form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.task .task-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 125, 50);
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.75;
+  padding: 8px 14px;
+  border-radius: 0.5rem;
+}
+
+.product label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  font: inherit;
+  letter-spacing: inherit;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 2rem;
+  margin: 0;
+  display: block;
+  min-width: 0;
+  width: 100%;
+}
+
+.add-btn {
+  position: absolute;
+  min-width: 1rem;
+  padding: 10px 10px;
+  border-radius: 0.5rem;
+  background-color: rgb(46, 125, 50);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-left: 6rem;
+}
+
+.task-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 10px;
+  border: 1px solid blue;
+  border-radius: 0.5rem;
+}
